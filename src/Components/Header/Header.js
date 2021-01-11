@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
   return (
     <div className="container">
-      <NavLink to="/" className="text-white"><p>MUSIC-DB</p></NavLink>
+      <NavLink to="/" className="text-white"><p>NADER RAMEZ RAMZY</p></NavLink>
     </div>
   );
 }
