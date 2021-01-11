@@ -1,0 +1,17 @@
+.myContainer .myImg {
+  text-align: left;
+  width: 50px;
+}
+
+.albumImg {
+  max-width: 100%;
+}
+
+.albumProps {
+  list-style: none;
+  color: white;
+}
+
+.myList {
+  margin-top: 15px;
+}

@@ -1,0 +1,39 @@
+.container {
+  background-image: url("../../images/cover.png");
+  height: 100vh;
+  font-family: 'Monoton';
+  font-size: 100px;
+  color: white;
+}
+
+.container p {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .container {
+    font-size: 50px;
+  }
+}

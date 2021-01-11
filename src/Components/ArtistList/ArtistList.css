@@ -1,0 +1,19 @@
+/* img {
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.imgCenter {
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
