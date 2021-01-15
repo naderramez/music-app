@@ -3,15 +3,15 @@ import {useState, useEffect} from 'react';
 
 const ArtistDetailsComponent = (props) => {
   let [artistDetails, setArtistDetails] = useState({});
-  let baseURL = `http://localhost:3005/artists/${props.properties.match.params.id}`;
+  let baseURL = `https://api.jsonbin.io/b/6000c826f98f6e35d5fca08b/2`;
 
   useEffect(() => {
-    fetch(baseURL, {method: "GET"})
+    fetch(baseURL, {method: "GET", headers: {"secret-key": "$2b$10$v2m1fCD4ZDMU4JSMXPZQ4O/AY2CTfn/LxIvX9VHFXz1xXs5DaTl1u"}})
     .then((res) => {
       return res.json();
     })
     .then((data) => {
-      setArtistDetails(data);
+      setArtistDetails(data[props.properties.match.params.id - 1]);
     })
     .catch((err) => {
       console.log(err);

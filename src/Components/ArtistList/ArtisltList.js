@@ -6,7 +6,7 @@ export default class ArtistList extends React.Component {
   constructor(props) {
     super(props)
 
-    this.baseURL = "http://localhost:3005/artists";
+    this.baseURL = "https://api.jsonbin.io/b/6000c826f98f6e35d5fca08b/2";
     this.state = {artists: []};
   }
 
@@ -43,7 +43,7 @@ export default class ArtistList extends React.Component {
   }
 
   componentDidMount() {
-    fetch(this.baseURL, {method: "GET"})
+    fetch(this.baseURL, {method: "GET", headers: {"secret-key": "$2b$10$v2m1fCD4ZDMU4JSMXPZQ4O/AY2CTfn/LxIvX9VHFXz1xXs5DaTl1u"}})
       .then((res) => {
         return res.json()
       })
